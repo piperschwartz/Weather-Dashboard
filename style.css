@@ -1,0 +1,15 @@
+.jumbotron {
+    background-color: #313332;
+    height: 30px;
+}
+
+.display-4 {
+    height: 30px;
+    color: white;
+    text-align: center;
+    padding: 0px;
+}
+
+.btn btn-primary {
+     text-align: center;    
+}
