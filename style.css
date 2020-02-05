@@ -3,6 +3,28 @@
     height: 30px;
 }
 
+body {
+    height:100%;
+    margin: 0;
+}
+
+#submitCity {
+    background-color: blue;
+    border-radius: 9px;
+    color: white;
+}
+
+#searchBox {
+    border: 1px solid black;
+}
+
+/* search weather form */
+.card-body {
+    width: 60px;
+    height: 60x;
+    float: left;
+}
+
 .display-4 {
     height: 30px;
     color: white;
@@ -10,6 +32,21 @@
     padding: 0px;
 }
 
-.btn btn-primary {
-     text-align: center;    
+
+
+.col {
+   width: 150px;
+   text-align: center;
+    margin-left: 300px;
+
+}
+
+.card {
+    width: 400px;
+    height: 300px;
+}
+
+.col-md-5 {
+    border: black;
+    width: 90px;
 }
