@@ -29,20 +29,34 @@
                 <div class="form-group">
                   <input type="text" class="form-control" id="city" aria-describedby="searchCity">
                 </div>
-                <button type="submit" class="btn btn-primary">Search</button>
+                <button type="submit" class="btn btn-primary" id="submitCity">Search</button>
               </form>
-              <div id="city-history"></div>
+              <div id="city-history"></div> 
+              <!-- this will hold the search history -->
+
           </div>
         </div>
 
+        <!-- this below will hold the current weather temp, humidity, wind, uv -->
         <div class="col s2 l9">
           <div class="current-conditions">
+            <h4 id="cityCurrent"></h4>
+            <div id="icon"></div>
+            <h5 id="temp"></h5>
+            <h5 id="humidity"></h5>
+            <h5 id="wind"></h5>
+            <h5 id="uv-index"></h5>
+
+            <h5 id="fiveDayHead"></h5>
+          </div>
+          <div id="fiveDay" class="col-sm-8 row">
+
             
           </div>
         </div>
       </div>
         
-     
+    </body>
      
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -50,5 +64,5 @@
 
     <script src="script.js"></script>
 
-</body>
+
 </html>
