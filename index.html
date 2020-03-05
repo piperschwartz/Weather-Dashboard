@@ -21,48 +21,54 @@
       
       <!-- Here starts the code for the container that the search features will be in. Also, the forecast and current weather will be here -->
 
-      <div class="containerSearch">
-        <div class="col-sm-4">
-          <div class="row">
-            <h3>Search for a City:</h3>
-              <form>
-                <div class="form-group">
-                  <input type="text" class="form-control" id="city" aria-describedby="searchCity">
-                </div>
-                <button type="submit" class="btn btn-primary" id="submitCity">Search</button>
-              </form>
-              <div id="city-history"></div> 
-              <!-- this will hold the search history -->
+     
+    <div class="row grey lighten-5"> <!--row for everything else-->
+      <div class="col s12 l3" >
+        <div id="city-info" class="input-field" >
+          <input id="city-input" type="text" placeholder="City">
+          <button type="button" class="btn btn-info" id="search">Search</button>
+        </div>
+        <div id="history-list" class="collection">
+          <!-- <a class="collection-item active">Search History</a> -->
 
-          </div>
         </div>
 
-        <!-- this below will hold the current weather temp, humidity, wind, uv -->
-        <div class="col s2 l9">
-          <div class="current-conditions">
-            <h4 id="cityCurrent"></h4>
-            <div id="icon"></div>
-            <h5 id="temp"></h5>
-            <h5 id="humidity"></h5>
-            <h5 id="wind"></h5>
-            <h5 id="uv-index"></h5>
-
-            <h5 id="fiveDayHead"></h5>
-          </div>
-          <div id="fiveDay" class="col-sm-8 row">
-
-            
-          </div>
-        </div>
+        <div class="row ml-1 pl-2 pb-3">
+          <button class="row btn btn-secondary pl-3 pb-2" id="clear-past-cities">Clear Saved Cities</button>
       </div>
+
+      </div>  
+
+
+      <div class="col s12 l9">
+        <div class="current-conditions">
+          <h4 id="current-info"></h4>
+          <!-- <h5 id="weather-details"></h5> -->
+          <div id="icon"></div>
+          <h5 id="temp"></h5>
+          <h5 id="humidity"></h5>
+          <h5 id="wind"></h5>
+          <h5 id="uv"></h5>
+          <br>
+          <br>
+          <h5 id="five-day-header"></h5>
+        </div>
         
-    </body>
+        <div id="five-day"></div> 
+        <!-- here is where the forecast for 5 days will populate -->
+      </div> 
+    </div>  
+  </div> 
+</body>
+
      
 
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script> 
   <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 
+  </body>
 
 </html>
