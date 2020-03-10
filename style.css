@@ -6,7 +6,7 @@
 }
 
 #history-list {
-   border:lightskyblue solid 1.5px;
+   border:black solid 1.5px;
    width: 180px;
  
 }
@@ -14,7 +14,8 @@
 .header {
     color: blue;
     font-weight: bold;
-}
+
+    }
 
 .card.horizontal {
     text-align: center;
@@ -24,5 +25,16 @@
 .current-conditions {
     border: black dotted 1px;
     text-align: center;
-    margin-right: 50px;
+    margin-left: 200px;
+    width: 70%;
+    background-color: white;
+}
+
+#five-day {
+    display: flex;
+    padding-top: 10px;
+}
+
+body {
+    background-color: lightskyblue;
 }
